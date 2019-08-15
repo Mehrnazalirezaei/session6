@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/recycler_row_shape"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="143dp"
+        android:id="@+id/imgPoster"
+        android:background="#E91E63"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitleLabel"
+        android:layout_marginLeft="5dp"
+        android:text="@string/title"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imgPoster"
+        app:layout_constraintRight_toLeftOf="@id/txtTitle" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitle"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/default_text"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtTitleLabel"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTypeLabel"
+        android:layout_marginLeft="5dp"
+        android:text="@string/type"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintLeft_toRightOf="@id/imgPoster"
+        app:layout_constraintRight_toLeftOf="@id/txtType"
+        app:layout_constraintBottom_toTopOf="@id/txtYearLabel"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtType"
+        android:layout_marginLeft="5dp"
+        android:text="@string/default_text"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintLeft_toRightOf="@id/txtTypeLabel"
+        app:layout_constraintBottom_toTopOf="@id/txtYear"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtYearLabel"
+        android:layout_marginLeft="5dp"
+        android:text="@string/year"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toRightOf="@id/imgPoster"
+        app:layout_constraintRight_toLeftOf="@id/txtYear"
+        app:layout_constraintBottom_toBottomOf="@id/imgPoster"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtYear"
+        android:layout_marginLeft="5dp"
+        android:text="@string/default_text"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toRightOf="@id/txtYearLabel"
+        app:layout_constraintBottom_toBottomOf="@id/imgPoster"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgAddFav"
+        android:src="@drawable/add_fav"
+        android:layout_margin="2.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgAddedFav"
+        android:src="@drawable/added_fav"
+        android:visibility="gone"
+        android:layout_margin="2.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imgDeleteFav"
+        android:src="@drawable/delete_fav"
+        android:visibility="gone"
+        android:layout_margin="2.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

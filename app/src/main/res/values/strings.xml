@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sematec-Session6</string>
+    <string name="search">find</string>
+    <string name="search_movies_by_title">find your movies</string>
+    <string name="default_text">default</string>
+    <string name="title">Title:</string>
+    <string name="type">Type:</string>
+    <string name="year">Year:</string>
+    <string name="next"> next </string>
+    <string name="back"> back </string>
+    <string name="open_drawable">open drawable</string>
+</resources>
